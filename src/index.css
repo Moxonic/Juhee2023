@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    background-color: rgb(65, 141, 141);
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Prata&display=swap');
+
+
+.prata{
+    font-family: prata;
+}
+
+.lato{
+    font-family: lato;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.landingPic{
+    /* position: relative;
+    top:5rem */
 }
