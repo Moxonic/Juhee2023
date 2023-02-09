@@ -8,17 +8,20 @@ import {BsInstagram} from 'react-icons/bs'
 
 const Contact = () => {
     return (
-        <section id="contact " className='h-screen relative bg-slate-200'>
-            <div className=" flex items-center place-content-evenly h-screen">
-                <div >
-                        <a href="mailto:wienjh1995@gmail.com" >
-                            <HiOutlineMail class="h-24 w-24" />
-                        </a>
+        <section id="contact " className=' relative bg-slate-200'>
+            <div className="p-12 flex items-center place-content-evenly h-fit">
+                
+                <div className=''>
+                    <a href="mailto:wienjh1995@gmail.com" >
+                        <HiOutlineMail class="m-auto h-8 w-8" />
+                    </a>
+                    <h2>Contact</h2>
                 </div>
                 <div>
-                        <a href="https://www.instagram.com/juheemanonkang/" target="_blank" rel="noreferrer">
-                            <BsInstagram class="h-24 w-24 p-3 contactSymbol"/>
-                        </a>
+                    <a href="https://www.instagram.com/juheemanonkang/" target="_blank" rel="noreferrer">
+                        <BsInstagram class=" m-auto h-8 w-8"/>
+                    </a>
+                    <h2>Follow</h2>
                 </div>
             </div> 
         </section>

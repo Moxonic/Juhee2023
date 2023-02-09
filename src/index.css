@@ -18,7 +18,6 @@ h1{
     font-size: 1.5rem;
 }
 
-.landingPic{
-    /* position: relative;
-    top:5rem */
-}
+html {
+    scroll-behavior: smooth;
+  }

@@ -6,7 +6,7 @@ function Landing() {
         <div className='landing relative h-screen'>
 
           <div className='relative overflow-hidden h-11'>
-            <img className='fixed min-h-screen sm:-top-32 md:-top-12 object-cover  w-auto' src={image3}></img>
+            <img className='fixed landscape:-top-44 min-h-screen sm:-top-32 md:-top-12 object-cover  w-auto' src={image3}></img>
           </div>
 
         </div>

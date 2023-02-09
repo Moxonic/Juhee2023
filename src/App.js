@@ -8,12 +8,12 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div>
+    <div className='snap-y'>
       <Header/>
       <Landing/>
       <About/>
       <Videos/>
-      <Contact/>
+      <Contact class="snap-s"/>
     </div>
   );
 }
