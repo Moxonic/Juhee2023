@@ -36,7 +36,7 @@ function Landing() {
 					<br></br>
 					<br></br>
 					With years of experience at the Vienna State Opera and her
-					current role at Oslo Operaen, Juhee has honed her skills to
+					current role at The Norwegian Opera and Ballet, Juhee has honed her skills to
 					become a sought-after performer in her field. Her rich and
 					dynamic lyrical soprano voice has captivated audiences
 					everywhere she has sung, and her charismatic stage presence
