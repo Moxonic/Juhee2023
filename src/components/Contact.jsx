@@ -15,13 +15,13 @@ const Contact = () => {
                 
                 <div>
                     <a href="mailto:wienjh1995@gmail.com" >
-                        <AiOutlineMail className="m-auto h-8 w-8" />
+                        <AiOutlineMail className="m-auto h-8 w-8 text-slate-500 hover:text-fuchsia-400" />
                     </a>
                 </div>
                 <h1>Contact</h1>
                 <div>
                     <a href="https://www.instagram.com/juheemanonkang/" target="_blank" rel="noreferrer">
-                        <AiOutlineInstagram className=" m-auto h-8 w-8"/>
+                        <AiOutlineInstagram className=" m-auto h-8 w-8 text-slate-500 hover:text-fuchsia-400"/>
                     </a>
                 </div>
             </div> 

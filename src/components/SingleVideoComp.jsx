@@ -13,7 +13,7 @@ function SingleVideoComp(props) {
 
           </div>
           {/* //////////////////////TEXT/////////////////////// */}
-          <div className="videoTextCcontainer px-0 py-3 w-fit m-auto">
+          <div className="videoTextContainer px-0 py-3 pb-10 w-fit m-auto">
             <h1 className="video-title text-slate-300 text-center w-fit m-auto">{props.title}</h1>
             <p className='justify-center text-slate-400 text-center w-fit m-auto'>
               composer: {props.composer}

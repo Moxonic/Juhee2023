@@ -26,8 +26,8 @@ function Landing() {
 				</div>
 			</div>
 			{/* /////////////ABOUT/////////// */}
-			<div className=" about flex flex-1 justify-center relative z-10 w-auto md:h-screen bg-slate-200">
-				<p className="p-8 md:p-12 place-self-center align-middle text-justify max-w-lg h-auto lato">
+			<div className=" about h-screen p-5 md:p-9 flex flex-1 justify-center relative z-10 w-auto md:h-screen bg-slate-200">
+				<p className=" p-3 rounded-md place-self-center align-middle text-justify max-w-lg h-auto bg-slate-100 lato">
 					Welcome to the homepage of Juhee Kang, a talented soprano
 					with a passion for performing on the world's most
 					prestigious stages.
