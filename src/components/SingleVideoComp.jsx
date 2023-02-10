@@ -2,8 +2,8 @@ import React from 'react'
 
 function SingleVideoComp(props) {
   return (
-    <div className='m-5 mb-0 w-fit max-w-screen'>
-        <div className="videoCard flex flex-col rounded-lg mx-auto bg-slate-300 w-fit">
+    <div className='m-auto mt-5 mb-0 w-fit max-w-screen'>
+        <div className="videoCard rounded-lg mx-auto bg-slate-300 w-fit">
           <div className="iframeContainer relative pt-0 m-auto w-fit">
             <iframe
               className='max-w-full rounded-t-lg top-0 left-0 m-auto aspect-ratio-16/9' 
