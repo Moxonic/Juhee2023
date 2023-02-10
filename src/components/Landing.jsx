@@ -3,9 +3,9 @@ import image3 from "../assets/IMG-0448.JPG";
 
 function Landing() {
 	return (
-		<div className="imageAbout_container  md:flex md:flex-row-reverse w-screen">
+		<div className="imageAbout_container overflow-hidden md:flex md:flex-row-reverse w-screen">
 			{/* /////////////IMG///////////// */}
-			<div className="image relative  md:max-w-[50%] h-screen w-full">
+			<div className="image  relative  md:max-w-[50%] h-screen w-full">
 				<div className="flex w-auto">
 					<img
 						className="
@@ -14,9 +14,7 @@ function Landing() {
             object-cover 
             md:h-auto 
             md:w-full 
-            md:top-0 
-          
-            
+            md:top-0             
             lg:h-full 
             lg:w-auto 
             transform 

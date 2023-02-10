@@ -5,10 +5,13 @@ import curtain from '../assets/curtain.jpg'
 
 function Videos() {
   return (
-    <div className='videos pb-5 relative bg-slate-500'>
-{/*         <div className='h-48 w-screen translate-y-[27%] absolute bg-slate-600'></div> 
- */}        
- <img className='h-full w-screen absolute' src={curtain}></img>
+    <div className='h-screen bg-gradient-to-b from-slate-200 via-slate-800 to-slate-300 align-middle'>
+
+    <div className='videos translate-y-1/2 h-94 overflow-y-clip pb-5 relative bg-slate-500'>     
+        <img className='w-full h-94 min-h-full absolute' src={curtain}></img>
+        
+        <div className='carousel-container h-94 overflow-hidden'>
+
         <Carousel 
 				defaultControlsConfig={{
 					nextButtonText: '>',
@@ -20,6 +23,9 @@ function Videos() {
 					prevButtonStyle: {
 					height:'200px'},
 					pagingDotsStyle: {
+            position:'absolute',
+            top:'1cm',
+            padding: '15px',
 						fill: 'lightgray'
 					}
 				}}
@@ -58,8 +64,10 @@ function Videos() {
                 opera= 'Manon'
                 role= 'Manon Lescaut'
             />
-        </Carousel>
+          </Carousel>
+        </div>
     </div> 
+    </div>
   )
 }
 
