@@ -11,15 +11,15 @@ const Contact = () => {
         <section id="contact " className=' relative bg-slate-200'>
             <div className="p-12 flex items-center place-content-evenly h-fit">
                 
-                <div className=''>
+                <div>
                     <a href="mailto:wienjh1995@gmail.com" >
-                        <HiOutlineMail class="m-auto h-8 w-8" />
+                        <HiOutlineMail className="m-auto h-8 w-8" />
                     </a>
                     <h2>Contact</h2>
                 </div>
                 <div>
                     <a href="https://www.instagram.com/juheemanonkang/" target="_blank" rel="noreferrer">
-                        <BsInstagram class=" m-auto h-8 w-8"/>
+                        <BsInstagram className=" m-auto h-8 w-8"/>
                     </a>
                     <h2>Follow</h2>
                 </div>

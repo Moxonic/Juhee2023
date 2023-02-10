@@ -3,7 +3,7 @@ import SingleVideoComp from './SingleVideoComp'
 
 function Videos() {
   return (
-    <div className='videos h-fit relative flex flex-wrap p-5 justify-around bg-slate-500'>
+    <div className='videos pb-5 h-fit relative flex flex-wrap justify-around bg-slate-500'>
 
             <SingleVideoComp 
                 url='https://www.youtube-nocookie.com/embed/TAXRUl6CxkA'
