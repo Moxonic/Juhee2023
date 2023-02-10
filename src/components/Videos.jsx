@@ -1,20 +1,24 @@
 import React from 'react'
 import SingleVideoComp from './SingleVideoComp'
 import Carousel from 'nuka-carousel';
+import curtain from '../assets/curtain.jpg'
 
 function Videos() {
   return (
-    <div className='videos pb-5 h-fit relative bg-slate-500'>
+    <div className='videos pb-5 relative bg-slate-500'>
+{/*         <div className='h-48 w-screen translate-y-[27%] absolute bg-slate-600'></div> 
+ */}        
+ <img className='h-full w-screen absolute' src={curtain}></img>
         <Carousel 
 				defaultControlsConfig={{
 					nextButtonText: '>',
 					prevButtonText: '<',
-					nextButtonStyle: {borderRadius: '20px 50px 50px 20px',
-					height:'inherit',
+					nextButtonStyle: {
+					height:'200px',
 					left:'0rem',
 					zIndex:'0'},
-					prevButtonStyle: {borderRadius: '50px 20px 20px 50px',
-					height:'inherit'},
+					prevButtonStyle: {
+					height:'200px'},
 					pagingDotsStyle: {
 						fill: 'lightgray'
 					}
