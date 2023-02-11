@@ -5,7 +5,7 @@ import curtain from '../assets/curtain.jpg'
 
 function Videos() {
   return (
-    <div className='flex flex-col justify-center h-screen align-middle bg-gradient-to-b from-slate-200 to-slate-600'>
+    <div className='scroll-item flex flex-col justify-center h-screen align-middle bg-gradient-to-b from-slate-200 to-slate-600'>
         <div className='videos videostripe pb-5 relative bg-slate-black'>     
 {/*             <img className='w-full h- min-h-full absolute opacity-20' src={curtain}></img>
  */}            

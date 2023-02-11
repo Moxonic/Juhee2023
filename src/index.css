@@ -30,15 +30,16 @@ html {
     height:340px;
 }
 
-.scroll-container{
-    scroll-snap-type: x mandatory;
+.scroll-container {
+    overflow: auto;
     scroll-snap-type: y mandatory;
-    background-color: aqua;
+    height: 100vh;
+
 }
-.scroll-area{
+
+.scroll-item {
     scroll-snap-align: start;
-    scroll-snap-align: center;
-    flex: none;
+    height: 100vh;
 }
 
 

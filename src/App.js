@@ -19,13 +19,14 @@ const { bind, unbind } = createScrollSnap(element, {
 
 function App() {
   return (
-  <div className='scroll-container snap-y snap-mandatory'>
-    <Header/>
-    <Landing className='scroll-area snap-start'/>
-    <Videos className='scroll-area'/>
-    <Contact/>
-  </div>
-   
+    <div>
+      <Header />
+      <div className='scroll-container'>
+        <Landing />
+        <Videos />
+        <Contact />
+      </div>
+    </div>
   );
 }
 

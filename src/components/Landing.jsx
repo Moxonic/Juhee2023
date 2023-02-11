@@ -3,10 +3,10 @@ import image3 from "../assets/IMG-0448.JPG";
 
 function Landing() {
 	return (
-		<div className="imageAbout_container overflow-hidden md:flex md:flex-row-reverse w-screen">
+		<div className="imageAbout_container md:flex md:flex-row-reverse w-screen">
 			{/* /////////////IMG///////////// */}
-			<div className="image  relative  md:max-w-[50%] h-screen w-full">
-				<div className="flex w-auto">
+			<div className="scroll-item image  relative  md:max-w-[50%] h-screen">
+				<div className="flex w-auto h-full">
 					<img
 						className="
             justify-center 
@@ -26,8 +26,8 @@ function Landing() {
 				</div>
 			</div>
 			{/* /////////////ABOUT/////////// */}
-			<div className=" about h-screen p-5 md:p-9 flex flex-1 justify-center relative z-10 w-auto md:h-screen bg-slate-200">
-				<p className=" p-3 rounded-md place-self-center align-middle text-justify max-w-lg h-auto bg-slate-100 lato">
+			<div className="scroll-item about h-screen p-5 md:p-9 flex flex-1 justify-center relative z-10 w-auto md:h-screen bg-slate-200">
+				<p className="p-3 rounded-md place-self-center align-middle text-justify max-w-lg h-auto bg-slate-100 lato">
 					Welcome to the homepage of Juhee Kang, a talented soprano
 					with a passion for performing on the world's most
 					prestigious stages.
