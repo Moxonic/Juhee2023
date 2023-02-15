@@ -26,9 +26,9 @@ html {
     z-index: 10; */
   }
 
-.videostripe{
+/* .videostripe{
     height:340px;
-}
+} */
 
 .scroll-container {
     overflow: auto;
@@ -40,6 +40,10 @@ html {
 .scroll-item {
     scroll-snap-align: start;
     height: 100vh;
+}
+
+.aspect-video17{
+    aspect-ratio: 17 / 9;
 }
 
 

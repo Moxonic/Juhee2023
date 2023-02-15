@@ -10,8 +10,8 @@ import {AiOutlineMail} from 'react-icons/ai'
 
 const Contact = () => {
     return (
-        <section id="contact " className=' relative bg-slate-200'>
-            <div className="p-4 flex items-center place-content-center gap-12 h-fit">
+        <section id="contact " className='snap-start flex top-34 relative h-screen bg-slate-200'>
+            <div className="p-4 flex w-full justify-center self-center  place-content-center gap-12 h-12">
                 
                 <div>
                     <a href="mailto:wienjh1995@gmail.com" >

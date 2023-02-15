@@ -1,14 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SingleVideoComp from './SingleVideoComp'
 import Carousel from 'nuka-carousel';
-import curtain from '../assets/curtain.jpg'
+
 
 function Videos() {
+
   return (
-    <div className='scroll-item flex flex-col justify-center h-screen align-middle bg-gradient-to-b from-slate-200 to-slate-600'>
-        <div className='videos videostripe pb-5 relative bg-slate-black'>     
-{/*             <img className='w-full h- min-h-full absolute opacity-20' src={curtain}></img>
- */}            
+    <div className='scroll-item flex flex-col justify-center h-screen align-middle bg-gradient-to-b from-slate-50 via-slate-300 to-slate-50'>
+        <div className='videos videostripe pb-5 relative lg:top-10 bg-slate-black'>                
             <div className=' carousel-container h-94 overflow-hidden'>
 
             <Carousel 
@@ -25,7 +24,7 @@ function Videos() {
                 position:'relative',
                 bottom:'-5px',
                 padding: '15px',
-                fill: 'lightgray'}
+                fill: 'gray'}
             }}
             animation={'slide'} 
             wrapAround={true} 

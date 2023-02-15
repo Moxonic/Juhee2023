@@ -1,17 +1,26 @@
-import React from 'react'
-import image1 from '../assets/IMG-0446.JPG'
-import image2 from '../assets/IMG-0447.JPG'
-import image3 from '../assets/IMG-0448.JPG'
-import image4 from '../assets/IMG-0470.JPG'
-import image5 from '../assets/IMG-0471.JPG'
-import image6 from '../assets/IMG-0472.JPG'
+import React, { useState, useEffect } from 'react';
+
+console.log('TOKEN', process.env.REACT_APP_FB_TOKEN);
+
 
 function Gallery() {
-  return (
-    <div className='h-screen grid  bg-slate-500'>
-     
+   const [html, setHtml] = useState('');
+ 
+   useEffect(() => {
+     const url = 'https://www.instagram.com/p/{POSTID}/';
+     const endpoint = `https://graph.facebook.com/v12.0/instagram_oembed?url=${encodeURIComponent(url)}&access_token={ACCESS_TOKEN}`;
+     // replace {POST_ID} with the actual Instagram post ID, and replace {ACCESS_TOKEN} with a valid access token for the Facebook Graph API
+    console.log( 'endpoint',endpoint); 
+     fetch(endpoint)
+       .then(response => response.json())
+       .then(data => setHtml(data.html));
+   }, []);
+ 
 
-    </div>
+  return (
+    <div className='scroll-item h-screen grid  bg-slate-500'>
+        <div dangerouslySetInnerHTML={{__html: html}} />
+    </div >
   )
 }
 
