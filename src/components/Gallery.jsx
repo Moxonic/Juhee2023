@@ -3,23 +3,36 @@ import React, { useState, useEffect } from 'react';
 console.log('TOKEN', process.env.REACT_APP_FB_TOKEN);
 
 
+
 function Gallery() {
-   const [html, setHtml] = useState('');
+   const [data, setData] = useState('');
  
+   const generatedToken = `IGQVJXRzk3NkR6LW50Q21zQUlDbm5OcjI0V3hBVHhBVktWNTJCTU12Vm1LMGpfZAVJkMWpoc3ItbmdaX0h0dUwxLXlUZA3pTRHE1V3N5dzVoMmVCeW04UzJ0enk0NUNZAZAnNuV1lGd1p4YWFzT2hWdzd6TgZDZD`
+
    useEffect(() => {
-     const url = 'https://www.instagram.com/p/{POSTID}/';
-     const endpoint = `https://graph.facebook.com/v12.0/instagram_oembed?url=${encodeURIComponent(url)}&access_token={ACCESS_TOKEN}`;
-     // replace {POST_ID} with the actual Instagram post ID, and replace {ACCESS_TOKEN} with a valid access token for the Facebook Graph API
-    console.log( 'endpoint',endpoint); 
-     fetch(endpoint)
-       .then(response => response.json())
-       .then(data => setHtml(data.html));
+
+    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${generatedToken}`;
+
+    fetch(url).then(res => res.json()).then(data => {
+      setData(data);
+    })
    }, []);
- 
+
+   const getInstagramImages = (data) => {
+    if (data) {
+      return data.data.map((image, i) => {
+        return (
+          <div key={i} className='w-1/3'>
+            <img src={image.media_url} alt={image.caption} />
+          </div>
+        )
+      })
+    }
+   }
 
   return (
     <div className='scroll-item h-screen grid  bg-slate-500'>
-        <div dangerouslySetInnerHTML={{__html: html}} />
+      {getInstagramImages(data)}
     </div >
   )
 }
