@@ -13,9 +13,9 @@ function App() {
       <div className='scroll-container'>
         <Landing />
         <Videos />
-        <Gallery />
         <Contact />
       </div>
+      <Gallery />
     </div>
   );
 }

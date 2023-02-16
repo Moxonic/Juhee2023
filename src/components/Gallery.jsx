@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-console.log('TOKEN', process.env.REACT_APP_FB_TOKEN);
-
-
-
 function Gallery() {
    const [data, setData] = useState('');
  
@@ -18,21 +14,23 @@ function Gallery() {
     })
    }, []);
 
-   const getInstagramImages = (data) => {
+   const getInstagramImages = (data, maxToShow) => {
     if (data) {
-      return data.data.map((image, i) => {
-        return (
-          <div key={i} className='w-1/3'>
-            <img src={image.media_url} alt={image.caption} />
-          </div>
-        )
+      return data.data.map((image, index) => {
+        if (index < maxToShow) {
+          return (
+            <div className='w-1/3' key={index}>
+              <img src={image.media_url} alt={image.caption} />
+            </div>
+          )
+        }
       })
     }
    }
 
   return (
     <div className='scroll-item h-screen grid  bg-slate-500'>
-      {getInstagramImages(data)}
+      {getInstagramImages(data, 3)}
     </div >
   )
 }
