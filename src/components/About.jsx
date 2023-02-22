@@ -5,7 +5,7 @@ function About() {
     <div >
         <div className=' about flex relative z-10 h-fit'>   
             <p className='z-10 p-8 place-self-center w-full text-justify bg-slate-100 lato'>
-                Welcome to the homepage of Juhee Kang, a talented soprano with a passion for performing on the world's most prestigious stages.
+                Juhee Kang is a talented soprano with a passion for performing on the world's most prestigious stages.
                 <br></br><br></br> 
                 With years of experience at the Vienna State Opera and her current role at Oslo Operaen, 
                 Juhee has honed her skills to become a sought-after performer in her field.

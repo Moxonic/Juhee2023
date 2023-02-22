@@ -1,37 +1,59 @@
 import React, { useState, useEffect } from 'react';
+import pic1 from '../assets/curtain.jpg';
+
 
 function Gallery() {
-   const [data, setData] = useState('');
+  const [data, setData] = useState('');
+  
+  const generatedToken = 'IGQVJVNWtWbkZAHVHN1N0RIU2pUYWg5bHVhMmdsRFpJVVhRLUZAyd0c0SUZAJR1AtUllaNkk3Ul9HU0F5V0FSSzM2ZAmNzSlFSaGRoRnlBSHpQNk1IRjVfVEVZAMUJqMmZAoR3BjMHM5eTFhTC1PQUNfNkpXNwZDZD';
  
-   const generatedToken = `IGQVJXRzk3NkR6LW50Q21zQUlDbm5OcjI0V3hBVHhBVktWNTJCTU12Vm1LMGpfZAVJkMWpoc3ItbmdaX0h0dUwxLXlUZA3pTRHE1V3N5dzVoMmVCeW04UzJ0enk0NUNZAZAnNuV1lGd1p4YWFzT2hWdzd6TgZDZD`
+  useEffect(() => {
 
-   useEffect(() => {
-
-    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${generatedToken}`;
-
+    const url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type,permalink&access_token=${generatedToken}`;
+    
     fetch(url).then(res => res.json()).then(data => {
       setData(data);
     })
-   }, []);
+  }, []);
 
-   const getInstagramImages = (data, maxToShow) => {
+  const getInstagramImages = (data, maxToShow) => {
+    
+    let imageArray = data.data; 
+    
+    
+    /* let{media_url}=imageArray[0]; */
+    
+    
+
     if (data) {
-      return data.data.map((image, index) => {
-        if (index < maxToShow) {
+      let onlyPics = imageArray.filter(imageArray=>imageArray.media_type==='IMAGE');
+      console.log('onlyPics', onlyPics)
+      return onlyPics.map((image, index) => {            
+        if (index < maxToShow ) {
           return (
-            <div className='w-1/3' key={index}>
-              <img src={image.media_url} alt={image.caption} />
+            <div className='returnedImg overflow-hidden aspect-square bg-cyan-400 
+            transition-transform duration-500 transform scale-100
+            hover:scale-110 hover:z-20 hover: hover:translate-x-1/8 hover:translate-y-1/8
+              ' key={index}>
+            {/*  <img src='pic1'></img> */}
+              <img className=' min-bg-w-full min-h-full object-cover'src={image.media_url} />
             </div>
           )
         }
       })
     }
-   }
+  }
 
   return (
-    <div className='scroll-item h-screen grid  bg-slate-500'>
-      {getInstagramImages(data, 3)}
-    </div >
+    <div className='scroll-item relative gallery scroll-item  h-fit flex justify-center items-center bg-slate-900'>
+     <div className='max-h-full max-w-full grid grid-cols-3 aspect-square grid-rows-3 gap-3 m-auto bg-slate-400
+    '>
+          {getInstagramImages(data, 9)}
+        </div>
+    </div>
+
+
+
   )
 }
 

@@ -40,13 +40,13 @@ function Videos() {
               opera='I Capuleti e i Montecchi'
               role='Giulietta'
             />
-            <SingleVideoComp
+           {/*  <SingleVideoComp
               url='https://www.youtube-nocookie.com/embed/ot9EFjAd6ds'
               title='Strahlender Mond'
               composer='Eduard Künneke (1885-1953)'
               opera='Vetter aus Dingsda'
               role='Julia de Weert'
-            />
+            /> */}
             <SingleVideoComp
 
               url='https://www.youtube.com/embed/j-3itKaHtNs'
