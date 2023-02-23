@@ -1,12 +1,15 @@
 import React from "react";
 import image3 from "../assets/IMG-0448.JPG";
+import Header from "./Header"
+import About from "./About";
 
 function Landing() {
 	return (
 		<div className="imageAbout_container md:flex md:flex-row-reverse w-screen">
+			
 			{/* /////////////IMG///////////// */}
 			<div className="scroll-item image  relative  md:max-w-[50%] h-screen">
-				<div className="flex w-auto h-full">
+				<div className="flex w-auto h-full justify-end">
 					<img
 						className="
             justify-center 
@@ -43,6 +46,7 @@ function Landing() {
 					</p>
 				</div>
 			</div>
+		{/* 	<About/> */}
 		</div>
 	);
 }

@@ -33,16 +33,14 @@ function Gallery() {
       })
     } 
   }
-
   return (
-    <div className='scroll-item relative gallery scroll-item  h-fit flex justify-center items-center bg-slate-900'>
-     <div className='max-h-full max-w-full grid grid-cols-3 aspect-square grid-rows-3 gap-3 m-auto bg-slate-400'>
+    <div className='scroll-item pb-10 relative gallery scroll-item   flex justify-center items-center 
+    bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50'
+    >
+     <div className='max-h-full max-w-full min--mb-px grid grid-cols-3 aspect-square grid-rows-3 gap-3 m-auto'>
           {getInstagramImages(data, 9)}
       </div>
     </div>
-
-
-
   )
 }
 

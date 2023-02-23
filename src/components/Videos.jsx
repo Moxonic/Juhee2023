@@ -5,7 +5,7 @@ import Carousel from 'nuka-carousel';
 
 function Videos() {
   return (
-    <div className='scroll-item flex flex-col justify-center h-screen align-middle bg-gradient-to-b from-slate-50 via-slate-300 to-slate-50'>
+    <div className='scroll-item flex flex-col justify-center h-screen align-middle bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50'>
       <div className='videos videostripe pb-5 relative lg:top-10 bg-slate-black'>
         <div className=' carousel-container h-94 overflow-hidden'>
           <Carousel

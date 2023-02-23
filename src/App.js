@@ -9,10 +9,10 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div>
-      <Header className=''/>
+      {/* <Header/> */}
       <div className='scroll-container'>
         <Landing />
-       {/*  <Videos />  */}
+        <Videos /> 
         <Gallery />
         <Contact />
       </div>
