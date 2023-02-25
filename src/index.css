@@ -17,8 +17,12 @@
 h1{
     font-size: 1.2rem;
 }
-
+body {
+    width:100vw;
+    overflow: hidden;
+}
 html {
+    
     scroll-behavior: smooth;
    /*  border-style: solid;
     border-color: fuchsia;

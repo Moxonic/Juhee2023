@@ -1,7 +1,7 @@
 import React from "react";
 import image3 from "../assets/IMG-0448.JPG";
 import Header from "./Header"
-import About from "./About";
+
 
 function Landing() {
 	return (
@@ -11,19 +11,18 @@ function Landing() {
 			<div className="scroll-item image  relative  md:max-w-[50%] h-screen">
 				<div className="flex w-auto h-full justify-end">
 					<img
-						className="
-            justify-center 
-            min-h-screen  
-            object-cover 
-            md:h-auto 
-            md:w-full 
-            md:top-0             
-            lg:h-full 
-            lg:w-auto 
-            transform 
-            origin-center
-            lg:translate-x-0"
-            
+						className="		
+						justify-center 
+						min-h-screen  
+						object-cover 
+						md:h-auto 
+						md:w-full 
+						md:top-0             
+						lg:h-full 
+						lg:w-auto 
+						transform 
+						origin-center
+						lg:translate-x-0"
 						src={image3}
 					></img>
 					<div className="absolute">
@@ -49,7 +48,6 @@ function Landing() {
 					</p>
 				</div>
 			</div>
-		{/* 	<About/> */}
 		</div>
 	);
 }

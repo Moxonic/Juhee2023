@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 const Header = () => {
 
-const [prevScrollPos, setPrevScrollPos] = useState(0);
+/* const [prevScrollPos, setPrevScrollPos] = useState(0);
 const [visible, setVisible] = useState(true)
 
 const handleScroll = () => {
@@ -24,13 +24,17 @@ useEffect( () => {
 
     return () => window.removeEventListener('scroll', handleScroll)
 })
-
+ */
 return (
-    <div className={`sticky ${visible ? 'top-0' : ''} `}>
-          <div  className='sticky top-0 text-center w-full bg-slate-200 p-4  opacity-50 border-solid border-b-2 '>
-            <h1 className='prata text-2xl text-slate-800 lg:text-6xl'>Juhee Manon Kang</h1>
-          </div>
+    <div className=''>
+    {/*     <div className=''></div>
+        <div className=' absolute z-30 bottom-5'>
+            <div  className=' text-center w-screen p-4'>
+                <h1 className='prata text-6xl text-slate-100 lg:text-6xl'>Juhee Kang</h1>
+            </div>
+        </div> */}
     </div>
+    
 )
 }
 

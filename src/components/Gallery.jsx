@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import {AiOutlineInstagram} from 'react-icons/ai'
+
 function Gallery() {
   const [data, setData] = useState('');
   const [zoomIndex, setZoomIndex] = useState(-1);
@@ -32,7 +34,7 @@ function Gallery() {
               key={index}
             >
               <div
-                className={`returnedImg overflow-hidden aspect-square bg-cyan-400 transition-transform duration-500 transform 
+                className={`returnedImg overflow-hidden aspect-square transition-transform duration-500 transform 
                   ${zoomIndex === index ? 'scale-10 absolute z-20 left-0 top-0 max-w-screen max-h-screen ' : 'scale-100'}
                   hover:scale-110 hover:z-20 hover: translate-x-1/8 hover:translate-y-1/8`}
               >
@@ -47,12 +49,14 @@ function Gallery() {
 
   return (
     <div
-      className='scroll-item pb-10 relative gallery scroll-item flex justify-center items-center 
+      className='gallery scroll-item relative flex flex-col  justify-center items-center 
         bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50'
     >
-      <div className='max-h-full max-w-full min--mb-px relative grid grid-cols-3 aspect-square grid-rows-3 gap-3 m-auto '>
+      <div className='max-h-full max-w-full min--mb-px relative grid grid-cols-3 aspect-square grid-rows-3 gap-3 m-auto min-m-1'>
         {getInstagramImages(data, 9)}
       </div>
+      
+     
     </div>
   )
 }
