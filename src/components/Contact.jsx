@@ -1,12 +1,8 @@
-import React from 'react'
+import React, { startTransition } from 'react'
 /* import { HiOutlineMail } from "react-icons/hi";
 import {BsInstagram} from 'react-icons/bs' */
 import {AiOutlineInstagram} from 'react-icons/ai'
 import {AiOutlineMail} from 'react-icons/ai'
-
-
-
-
 
 const Contact = () => {
     return (

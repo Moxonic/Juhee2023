@@ -9,9 +9,11 @@ const handleScroll = () => {
     const currentScrollPos = window.scrollY
 
     if(currentScrollPos > prevScrollPos){
-        setVisible(false)
+        setVisible(false);
+        console.log(visible);
     }else{
         setVisible(true)
+        console.log(visible);
     }
 
     setPrevScrollPos(currentScrollPos)
