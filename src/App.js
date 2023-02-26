@@ -8,9 +8,9 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div>
+    <div className='outerstContainer relative'>
       <Header/> 
-      <div className='scroll-container'>
+      <div className='scroll-container w-screen'>
         <Landing />
         <Videos /> 
         <Gallery />

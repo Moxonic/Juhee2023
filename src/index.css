@@ -22,7 +22,7 @@ body {
     overflow: hidden;
 }
 html {
-    
+    width: 100vw;
     scroll-behavior: smooth;
    /*  border-style: solid;
     border-color: fuchsia;
@@ -34,12 +34,19 @@ html {
     height:340px;
 } */
 
+.outerstContainer{
+    overflow:hidden;
+    width:100vw;
+}
+
 .scroll-container {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
     height: 100vh;
-
 }
+
+
 
 .scroll-item {
     scroll-snap-align: start;
