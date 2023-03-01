@@ -52,7 +52,7 @@ function Gallery() {
       className='gallery  scroll-item relative flex flex-col  justify-center items-center 
         bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50'
     >
-      <div className='h-4/6  max-w-full min--mb-px relative grid grid-cols-3 aspect-square grid-rows-3 gap-3 m-auto min-m-1'>
+      <div className='max-h-4/6 max-w-5/6 min--mb-px relative grid grid-cols-3 aspect-square grid-rows-3 gap-3 m-auto min-m-1'>
         {getInstagramImages(data, 9)}
       </div>
     </div>
