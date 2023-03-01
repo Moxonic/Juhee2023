@@ -8,7 +8,7 @@ function Landing() {
 		<div className="imageAbout_container  md:flex md:flex-row-reverse w-screen">
 			
 			{/* /////////////IMG///////////// */}
-			<div className="scroll-item image  relative bottom-0 md:max-w-[50%] min-w-[40%] h-screen">
+			<div className="scroll-item image  relative bottom-0 md:max-w-[45%] min-w-[40%] h-screen">
 				<div className="flex w-auto h-full justify-center">
 					<div className="imgContainer ">
 						<img
