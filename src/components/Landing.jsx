@@ -1,16 +1,15 @@
 import React from "react";
-import image3 from "../assets/IMG-0448.JPG";
-import Header from "./Header";
+import image3 from "../assets/IMG-0448.jpeg";
 import {GiGClef} from 'react-icons/gi';
 
 
 function Landing() {
 	return (
-		<div className="imageAbout_container md:flex md:flex-row-reverse w-screen">
+		<div className="imageAbout_container  md:flex md:flex-row-reverse w-screen">
 			
 			{/* /////////////IMG///////////// */}
-			<div className="scroll-item image  relative  md:max-w-[50%] h-screen">
-				<div className="flex w-auto h-full justify-end">
+			<div className="scroll-item image  relative bottom-0 md:max-w-[50%] min-w-[40%] h-screen">
+				<div className="flex w-auto h-full justify-center">
 					<div className="imgContainer ">
 						<img
 							className="
@@ -20,7 +19,7 @@ function Landing() {
 							md:h-auto 
 							md:w-full 
 							md:top-0             
-							lg:h-full 
+							lg:h-ful 
 							lg:w-auto 
 							transform 
 							origin-center
@@ -29,9 +28,9 @@ function Landing() {
 						>
 							
 						</img>
-						<h1 className='prata absolute bottom-12 text-center w-full text-6xl text-slate-100'>Juhee Kang</h1>
 					</div>
-	            	
+	        <h1 className='prata absolute mb-12 bottom-0 text-center text-5xl  text-slate-100'>Juhee Kang</h1>
+
 
 				</div>
 			</div>
@@ -47,7 +46,7 @@ function Landing() {
 						everywhere she has sung, and her charismatic stage presence
 						is truly unforgettable. */}
 
-						Hi there, and welcome to my official website! My name is Juhee Kang, 
+						Welcome to my official website! My name is Juhee Kang, 
 						and I am a lyrical soprano who has had the privilege of performing on some of the most prestigious stages in the world.
 						<br></br><br></br>
 						I was born in Vienna, a city that has always held a special place in my heart, 

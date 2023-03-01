@@ -57,4 +57,20 @@ html {
     aspect-ratio: 17 / 9;
 }
 
-
+/* .clef1{
+    position:absolute;
+    justify-self: center;
+    top:0rem;
+    left:-22rem;
+    font-size: 150vh;
+    opacity:0.1;
+    transform: rotate(10deg);
+}
+.clef2{
+    position:absolute;
+    top:0rem;
+    left:-22rem;
+    font-size: 100vh;
+    opacity:0.1;
+    transform: rotate(14deg);
+} */
