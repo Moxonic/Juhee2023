@@ -14,8 +14,8 @@ function SingleVideoComp(props) {
         </div> 
           {/* //////////////////////TEXT/////////////////////// */}
           <div className="videoTextContainer rounded mt-2 pb-11 m-auto bg-gradient-to-b from-slate-200 via-slate-50 to-opacity-0 ">
-            <h1 className="video-title text-slate-900 pt-5 text-center w-fit m-auto">{props.title}</h1>
-            <p className='justify-center text-slate-800 text-center w-fit m-auto'>
+            <h1 className="video-title text-slate-700 pt-5 text-center w-fit m-auto">{props.title}</h1>
+            <p className='justify-center text-slate-600 text-center w-fit m-auto'>
               composer: {props.composer}
               <br></br>
               opera: {props.opera}
