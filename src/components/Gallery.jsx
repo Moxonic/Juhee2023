@@ -8,7 +8,7 @@ function Gallery() {
   const generatedToken = process.env.REACT_APP_TIMECONSTRAINED_TOKEN;
 
   function zoomSet(index) {
-    setZoomIndex(index === zoomIndex ? -1 : index);
+    setZoomIndex(parseInt(index) === zoomIndex ? -1 : parseInt(index));
   };
 
   useEffect(() => {
@@ -35,7 +35,7 @@ function Gallery() {
             >
               <div
                 className={`returnedImg overflow-hidden aspect-square transition-transform duration-500 transform 
-                  ${zoomIndex === index ? 'scale-10 absolute z-20 left-0 top-0 max-w-screen max-h-screen ' : 'scale-100'}
+                  ${zoomIndex === index ? 'scale-10 absolute z-20 left-0 top-0 p-5 max-w-screen max-h-screen ' : 'scale-100'}
                   hover:scale-110 hover:z-20 hover: translate-x-1/8 hover:translate-y-1/8`}
               >
                 <img className='min-w-full min-h-full object-cover' src={image.media_url} alt='pictures from the instagram feed of soprano juhee kang'/>
@@ -43,6 +43,7 @@ function Gallery() {
             </button>
           )
         }
+        return null;
       })
     }
   }

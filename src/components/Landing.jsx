@@ -29,7 +29,7 @@ function Landing() {
 							
 						</img>
 					</div>
-	        <h1 className='prata absolute mb-12 bottom-0 text-center text-5xl  text-slate-100'>Juhee Kang</h1>
+	        <h1 className='prata absolute mb-12 md:mb-5 bottom-0 text-center text-5xl  text-slate-100'>Juhee Manon Kang</h1>
 
 
 				</div>
@@ -37,8 +37,8 @@ function Landing() {
 			{/* /////////////ABOUT/////////// */}
 			<div className="scroll-item about h-screen px-5 py-0 md:px-9  flex flex-1 justify-center relative z-10 w-auto bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50">
 				<div className="bg-slate-50 flex">
-					<p className=" lg:px-12 m-auto text-slate-700 place-self-center h-fit text-justify max-w-xl   lato">
-						Welcome to my official website! My name is Juhee Kang, 
+					<p className="px-2 lg:px-12 m-auto  text-slate-700 place-self-center lg:text-sm h-fit text-justify max-w-xl max-h-screen  lato">
+						Welcome to my official website! My name is Juhee Manon Kang, 
 						and I am a lyrical soprano who has had the privilege of performing on some of the most prestigious stages in the world.
 						<br></br><br></br>
 						I was born in Vienna, a city that has always held a special place in my heart, 
