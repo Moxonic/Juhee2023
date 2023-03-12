@@ -6,7 +6,7 @@ import {AiOutlineMail} from 'react-icons/ai'
 
 const Contact = () => {
     return (
-        <section id="contact " className='snap-start h-screen flex justify-center relative bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50'>
+        <section id="contact " className='snap-start h-fit flex justify-center relative bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50'>
             <div className="p-3 flex flex-col max-w-5xl lg:px-24  place-content-center mx-5 bg-slate-50">
                  <h1 className='text-center text-slate-700 mx-auto max-w-md'>
                 If you're interested in collaborating or booking, 

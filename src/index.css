@@ -63,7 +63,7 @@ html {
 .scroll-container {
     overflow-y: auto;
     overflow-x: hidden;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y none;
     height: 100vh;
 }
 
@@ -71,16 +71,16 @@ html {
 
 .scroll-item {
     scroll-snap-align: start;
-    height: 100vh;
+   /*  height: 100vh; */
 }
 
 .aspect-video17{
     aspect-ratio: 17 / 9;
 }
 
-.scroll-item{
-    padding-bottom: 3rem;
-}
+/* .scroll-item{
+    padding-bottom: ;
+} */
 
 
 /* .clef1{

@@ -10,9 +10,10 @@ function Landing() {
 			{/* /////////////IMG///////////// */}
 			<div className="scroll-item image  relative bottom-0 md:max-w-[45%] min-w-[40%] h-screen">
 				<div className="flex w-auto h-full justify-center">
-					<div className="imgContainer ">
+					<div className="imgContainer">
 						<img
 							className="
+							left-0
 							justify-center 
 							min-h-screen  
 							object-cover 
@@ -29,15 +30,15 @@ function Landing() {
 							
 						</img>
 					</div>
-	        <h1 className='prata absolute mb-12 md:mb-5 bottom-0 text-center text-5xl  text-slate-100'>Juhee Manon Kang</h1>
+	        <h1 className='prata p-5 absolute mb-12 md:mb-5 bottom-0 text-center text-5xl  text-slate-100'>Juhee Manon Kang</h1>
 
 
 				</div>
 			</div>
 			{/* /////////////ABOUT/////////// */}
-			<div className="scroll-item about h-screen px-5 py-0 md:px-9  flex flex-1 justify-center relative z-10 w-auto bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50">
+			<div className="scroll-item about h-full md:h-screen px-5 py-0 md:px-9  flex flex-1 justify-center relative z-10 w-auto bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50">
 				<div className="bg-slate-50 flex">
-					<p className="px-2 lg:px-12 m-auto  text-slate-700 place-self-center lg:text-sm h-fit text-justify max-w-xl max-h-screen  lato">
+					<p className="p-5 py-16 lg:px-12 m-auto leading-8 md:leading-5 text-slate-700 place-self-center lg:text-sm  text-justify max-w-xl md:max-h-screen  lato">
 						Welcome to my official website! My name is Juhee Manon Kang, 
 						and I am a lyrical soprano who has had the privilege of performing on some of the most prestigious stages in the world.
 						<br></br><br></br>
