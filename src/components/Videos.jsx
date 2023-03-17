@@ -1,15 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SingleVideoComp from './SingleVideoComp'
 import Carousel from 'nuka-carousel';
-import {GiGClef} from 'react-icons/gi';
+
 
 
 function Videos() {
   return (
     <div className='scroll-item relative flex flex-col justify-center h-screen align-middle bg-gradient-to-b from-slate-50 via-slate-300 to-slate-50'>
-     {/*  <div className="clef1"><GiGClef/></div>
-      <div className="clef2"><GiGClef/></div>
- */}
       <div className='videos videostripe pb-5 relative lg:top-10 bg-slate-black'>
         <div className=' carousel-container h-94 overflow-hidden'>
           <Carousel
@@ -36,6 +33,22 @@ function Videos() {
             slidesToShow={1}
             className=''>
               {/* /////NUMBER OF SLIDES TO ADAPT TO SCREEN WIDTH */}
+
+            <SingleVideoComp
+              url='https://www.youtube.com/embed/aJuH7UjU-mI'
+              title='Qui la voce sua soave… Vien, diletto'
+              composer='Vincenzo Bellini (1801 - 1835)'
+              opera='I Puritani'
+              role='Elvira'
+            />
+
+            <SingleVideoComp
+              url='https://www.youtube.com/embed/Oh7psr-LjRE'
+              title='Signore, ascolta'
+              composer='Giacomo Puccini (1858 - 1924)'
+              opera='Turandot'
+              role='Liu'
+            />
 
             <SingleVideoComp
               url='https://www.youtube-nocookie.com/embed/TAXRUl6CxkA'
