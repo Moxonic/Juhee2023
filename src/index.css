@@ -31,6 +31,12 @@ html {
     background-color: transparent;
   }
   
+.hole{
+    border-width: 100vh;
+    border-style: solid;
+    border-color: black;
+
+}
 
 .prata{
     font-family: prata;

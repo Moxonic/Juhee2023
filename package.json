@@ -9,6 +9,7 @@
     "dotenv": "^16.0.3",
     "flowbite": "^1.6.3",
     "flowbite-react": "^0.3.8",
+    "lightgallery": "^2.7.1",
     "nuka-carousel": "^5.4.1",
     "pnpm": "^7.27.1",
     "react": "^18.2.0",

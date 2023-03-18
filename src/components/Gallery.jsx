@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import {AiOutlineInstagram} from 'react-icons/ai';
-
+import LightGallery from 'lightgallery/react';
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
 
 
 function Gallery() {
+  const onInit = () => {
+    console.log('lightGallery has been initialized');
+  };  
   const [data, setData] = useState('');
-  const [zoomIndex, setZoomIndex] = useState(-1);
+
 
   const generatedToken = process.env.REACT_APP_TIMECONSTRAINED_TOKEN;
- /*  console.log('generatedToken', generatedToken);
-  console.log('TITLE', process.env.REACT_APP_TITLE); */
 
-  function zoomSet(index) {
-    setZoomIndex(parseInt(index) === zoomIndex ? -1 : parseInt(index));
-  };
 
   useEffect(() => {
     const url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type,permalink&access_token=${generatedToken}`;
@@ -32,19 +34,9 @@ function Gallery() {
       return onlyPics.map((image, index) => {
         if (index < maxToShow) {
           return (
-            <button
-              className='btn'
-              onClick={() => zoomSet(index)}
-              key={index}
-            >
-              <div
-                className={`returnedImg overflow-hidden aspect-square transition-transform duration-500 transform 
-                  ${zoomIndex === index ? 'scale-10 absolute z-20 left-0 top-0 p-5 max-w-screen max-h-screen ' : 'scale-100'}
-                  hover:scale-110 hover:z-20 hover: translate-x-1/8 hover:translate-y-1/8`}
-              >
-                <img className='min-w-full min-h-full object-cover' src={image.media_url} alt='pictures from the instagram feed of soprano juhee kang'/>
-              </div>
-            </button>
+          
+                <img className='h-full min-w-full aspect-square object-cover ' src={image.media_url} alt='pictures from the instagram feed of soprano juhee kang'/>
+           
           )
         }
         return null;
@@ -53,12 +45,19 @@ function Gallery() {
   }
 
   return (
-    <div
-      className='gallery scroll-item relative flex flex-col  justify-center items-center 
-        pb-0 bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50'
-    >
-      <div className='max-h-screen p-5 mb-12 md:p-12 min--mb-px relative grid grid-cols-3 aspect-square grid-rows-3 gap-3 m-auto min-m-1'>
-        {getInstagramImages(data, 9)}
+    <div className="galleryContainer h-96  bg-gradient-to-b from-slate-50  to-slate-50">
+      <div className="flex justify-center h-full">
+      <LightGallery
+                  onInit={onInit}
+                  speed={500}
+                  plugins={[lgThumbnail, lgZoom]}
+                  download={false}
+                  thumbnail={false}
+                  elementClassNames="relative overflow-hidden grid grid-cols-3 grid-rows-3 gap-1 "
+              >
+              
+          {getInstagramImages(data, 9)}
+      </LightGallery>
       </div>
     </div>
   )
