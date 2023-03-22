@@ -11,7 +11,9 @@ html {
   *, *::before, *::after {
     box-sizing: inherit;
   }
-
+  body {
+    overflow: hidden; /* Hide scrollbars */
+  }
   body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
@@ -68,7 +70,7 @@ html {
 
 .scroll-container {
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x:;
     scroll-snap-type: y none;
     height: 100vh;
 }
@@ -84,25 +86,4 @@ html {
     aspect-ratio: 17 / 9;
 }
 
-/* .scroll-item{
-    padding-bottom: ;
-} */
 
-
-/* .clef1{
-    position:absolute;
-    justify-self: center;
-    top:0rem;
-    left:-22rem;
-    font-size: 150vh;
-    opacity:0.1;
-    transform: rotate(10deg);
-}
-.clef2{
-    position:absolute;
-    top:0rem;
-    left:-22rem;
-    font-size: 100vh;
-    opacity:0.1;
-    transform: rotate(14deg);
-} */
