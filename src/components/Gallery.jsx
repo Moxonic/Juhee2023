@@ -35,7 +35,7 @@ function Gallery() {
         if (index < maxToShow) {
           return (
           
-                <img className='h-full min-w-full aspect-square object-cover ' src={image.media_url} alt='pictures from the instagram feed of soprano juhee kang'/>
+                <img className='h-full rounded min-w-full aspect-square object-cover ' src={image.media_url} alt='pictures from the instagram feed of soprano juhee kang'/>
            
           )
         }
@@ -45,7 +45,7 @@ function Gallery() {
   }
 
   return (
-    <div className="galleryContainer relative z-50 h-96  bg-gradient-to-b  from-slate-100  to-slate-300">
+    <div className="galleryContainer relative z-50 h-96  bg-gradient-to-b  from-slate-100  to-slate-50">
       <div className="flex justify-center h-full p-5">
       <LightGallery
                   onInit={onInit}
@@ -53,7 +53,7 @@ function Gallery() {
                   plugins={[lgThumbnail, lgZoom]}
                   download={false}
                   thumbnail={false}
-                  elementClassNames="relative overflow-hidden grid grid-cols-3 grid-rows-3 gap-5 "
+                  elementClassNames="relative overflow-hidden grid grid-cols-3 grid-rows-3 gap-2 "
               >
               
           {getInstagramImages(data, 9)}
