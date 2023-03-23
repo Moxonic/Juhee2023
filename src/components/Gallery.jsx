@@ -45,7 +45,7 @@ function Gallery() {
   }
 
   return (
-    <div className="galleryContainer relative z-50 h-96  bg-gradient-to-b  from-slate-100  to-slate-50">
+    <div className="galleryContainer  z-50 h-fit md:px-36 lg:px-96  max-h-screen lg:py-24  bg-gradient-to-b  from-slate-100  to-slate-50">
       <div className="flex justify-center h-full p-5">
       <LightGallery
                   onInit={onInit}

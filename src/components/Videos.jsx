@@ -2,11 +2,18 @@ import React from 'react'
 import SingleVideoComp from './SingleVideoComp'
 import Carousel from 'nuka-carousel';
 
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+function handleMediaQuery(mediaQuery) {
+  if (mediaQuery.matches) {
+    console.log('mediaQuery matches', mediaQuery.matches);
+    return 3;
+  }
+}
 
 
 function Videos() {
   return (
-    <div className='scroll-item relative flex flex-col justify-center h-auto py-12 align-middle bg-gradient-to-b from-slate-200 via-slate-300 to-slate-100'>
+    <div className='scroll-item relative flex flex-col justify-center h-auto py-40 align-middle bg-gradient-to-b from-slate-200 via-slate-300 to-slate-100'>
       <div className='videos videostripe pb-5 relative lg:top-10 bg-slate-black'>
         <div className=' carousel-container h-94 overflow-hidden'>
           <Carousel
