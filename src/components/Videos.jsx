@@ -13,9 +13,9 @@ function handleMediaQuery(mediaQuery) {
 
 function Videos() {
   return (
-    <div className='scroll-item relative flex flex-col justify-center h-auto py-40 align-middle bg-gradient-to-b from-slate-200 via-slate-300 to-slate-100'>
-      <div className='videos videostripe pb-5 relative lg:top-10 bg-slate-black'>
-        <div className=' carousel-container h-94 overflow-hidden'>
+    <div className='scroll-item relative flex flex-col justify-center h-auto py-40 align-middle bg-gradient-to-b from-slate-300 via-slate-400 to-slate-100'>
+      <div className='videos videostripe pb-5 h-auto relative lg:top-10 bg-slate-black'>
+        <div className=' carousel-container  overflow-hidden'>
           <Carousel
             defaultControlsConfig={{
               nextButtonText: '>',
@@ -47,6 +47,8 @@ function Videos() {
               composer='Vincenzo Bellini (1801 - 1835)'
               opera='I Puritani'
               role='Elvira'
+              style=''
+              
             />
 
             <SingleVideoComp

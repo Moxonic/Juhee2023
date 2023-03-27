@@ -14,7 +14,13 @@ function App() {
         <Videos /> 
         <Gallery />
         <Contact />
+       {/*  <div className="footerContainer overflow-clip relative  h-20 flex ">
+			
+				<img className='absolute pt-5 bottom-0 overflow-auto w-screen h-auto self-center ' src={Staatsoper} alt="Background" />
+				<div className="absolute  bottom-0 bg-slate-50 opacity-80 h-full w-full z-10"></div>
+			</div>  */}     
       </div>
+
     </div>
   );
 }
