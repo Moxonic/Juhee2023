@@ -1,20 +1,32 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import SingleVideoComp from './SingleVideoComp'
 import Carousel from 'nuka-carousel';
 
-const mediaQuery = window.matchMedia('(min-width: 768px)');
-function handleMediaQuery(mediaQuery) {
-  if (mediaQuery.matches) {
-    console.log('mediaQuery matches', mediaQuery.matches);
-    return 3;
-  }
-}
-
-
 function Videos() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const handleLoad = () => {
+    setIsLoaded(true);
+  };
+ /*  const [slidesToShow, setSlidesToShow] = useState(1);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    const handleMediaQuery = (mq) => {
+      setSlidesToShow(mq.matches ? 3 : 1);
+    };
+    handleMediaQuery(mediaQuery);
+    mediaQuery.addListener(handleMediaQuery);
+    return () => {
+      mediaQuery.removeListener(handleMediaQuery);
+    };
+  }, []);
+  ADD TO CAROUSEL IF <NEEDED>
+  slidesToShow={slidesToShow}
+ */
+
   return (
     <div className='scroll-item relative flex flex-col justify-center h-auto py-40 align-middle bg-gradient-to-b from-slate-300 via-slate-400 to-slate-100'>
-      <div className='videos videostripe pb-5 h-auto relative lg:top-10 bg-slate-black'>
+      <div className='videos videostripe pb-5 h-auto relative lg:top-10  bg-slate-black'>
         <div className=' carousel-container  overflow-hidden'>
           <Carousel
             defaultControlsConfig={{
@@ -37,10 +49,9 @@ function Videos() {
             }}
             animation={'slide'}
             wrapAround={true}
-            slidesToShow={1}
-            className=''>
-              {/* /////NUMBER OF SLIDES TO ADAPT TO SCREEN WIDTH */}
-
+        
+          >
+          
             <SingleVideoComp
               url='https://www.youtube.com/embed/aJuH7UjU-mI'
               title='Qui la voce sua soave… Vien, diletto'
@@ -50,7 +61,7 @@ function Videos() {
               style=''
               
             />
-
+           
             <SingleVideoComp
               url='https://www.youtube.com/embed/Oh7psr-LjRE'
               title='Signore, ascolta'

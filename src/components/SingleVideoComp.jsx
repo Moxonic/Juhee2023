@@ -6,14 +6,14 @@ function SingleVideoComp(props) {
 {/*         <div className="videoCard rounded-lg mx-auto  w-fit bg-gradient-to-b from-black via-black to-slate-900">
  */}          <div className="iframeContainer w-full relative pt-0 pb-0 m-auto">
             <iframe
-              className='w-full rounded left-0 aspect-video17  ' 
+              className='w-full lg:w-96 rounded m-auto aspect-video17  ' 
               src={props.url} 
               allowFullScreen={true} 
             ></iframe>
 
         </div> 
           {/* //////////////////////TEXT/////////////////////// */}
-          <div className="videoTextContainer w-full rounded mt-2 pb-11 m-auto bg-gradient-to-b from-slate-200 via-slate-50 to-opacity-0 ">
+          <div className="videoTextContainer w-full lg:w-96 rounded mt-2 pb-11 m-auto bg-gradient-to-b from-slate-200 via-slate-50 to-opacity-0 ">
             <h1 className="video-title text-slate-700 pt-1 text-center w-fit m-auto">{props.title}</h1>
             <p className='justify-center text-slate-600 text-center w-fit m-auto'>
               composer: {props.composer}

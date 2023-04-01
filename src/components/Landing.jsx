@@ -8,7 +8,7 @@ function Landing() {
 			
 			<div className="headerContainer relative h-36 flex">
 				{/* Background image */}
-				<img className='absolute md:-translate-y-20 lg:-translate-y-40 overflow-auto w-screen h-auto self-center ' src={Staatsoper} alt="Background" />
+				<img className='fixed -z-10 md:-translate-y-20 lg:-translate-y-40 overflow-auto w-screen h-auto self-center ' src={Staatsoper} alt="Background" />
 				<div className="absolute bg-slate-50 opacity-80 h-full w-full z-10"></div>
 			</div>
 				{/* Portrait image */}
