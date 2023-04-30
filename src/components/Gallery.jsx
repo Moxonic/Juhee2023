@@ -34,7 +34,7 @@ function Gallery() {
       return onlyPics.map((image, index) => {
         if (index < maxToShow) {
           return (
-            <div className="imgPad p-1 ease-in-out  duration-200 hover:p-0">
+            <div className="imgPad p-1 ease-in-out aspect-square duration-200 hover:p-0">
                 <img className='min-h-full min-w-full w-auto h-auto rounded  aspect-square object-cover ' src={image.media_url} alt='pictures from the instagram feed of soprano juhee kang'/>
             </div>
            
@@ -47,7 +47,7 @@ function Gallery() {
 
   return (
     <div className="galleryContainer justify-center flex z-50 h-fit md:px-36 lg:px-72 max-h-screen lg:h-4/5  bg-gradient-to-b  from-slate-100  to-slate-50">
-      <div className="flex justify-center h-auto p-5">
+      <div className="flex justify-center h-auto p-5 aspect-square">
       <LightGallery
                   onInit={onInit}
                   speed={500}
