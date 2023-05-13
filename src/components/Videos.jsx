@@ -25,7 +25,7 @@ function Videos() {
  */
 
   return (
-    <div className='scroll-item relative flex flex-col justify-center h-auto py-40 align-middle bg-gradient-to-b from-slate-300 to-slate-50'>
+    <div className='scroll-item relative flex flex-col justify-center h-auto w-screen py-12 align-middle bg-gradient-to-b from-slate-300 to-slate-50'>
       <div className='videos videostripe pb-5 h-auto relative lg:top-10  bg-slate-black'>
         <div className=' carousel-container  overflow-hidden'>
           <Carousel

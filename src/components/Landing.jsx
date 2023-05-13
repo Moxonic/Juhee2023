@@ -19,10 +19,10 @@ function Landing() {
 			
 
 			{/* /////////////ABOUT/////////// */}
-			<div className="scroll-item about h-full px-5 py-24 md:px-9  flex flex-1 justify-center relative z-10 w-auto bg-gradient-to-b from-slate-50   via-slate-200 to-slate-300">
+			<div className="about h-auto px-5 py-24 md:px-9  flex flex-1 justify-center relative z-10 w-auto bg-gradient-to-b from-slate-50   via-slate-200 to-slate-300">
 				<div className="bg-slate-50 flex flex-col justify-center h-fit rounded-lg">
 					<h1 className='prata p-5 absolut text-center text-3xl  text-slate-700'>Juhee Manon Kang</h1>
-					<p className="p-5  lg:px-12  leading-relaxed text-slate-700 place-self-center lg:text-sm  text-justify max-w-xl md:max-h-screen  lato">
+					<p className="px-5 pb-12  lg:px-12  leading-relaxed text-slate-700 place-self-center lg:text-sm  text-justify max-w-xl md:max-h-screen  lato">
 						Welcome to my official website! My name is Juhee Manon Kang,
 						and I am a lyrical soprano who has had the privilege of performing on some of the most prestigious stages in the world.
 						<br></br><br></br>

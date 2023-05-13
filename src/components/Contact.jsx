@@ -7,12 +7,12 @@ import Staatsoper from "../assets/Staatsoper.jpg";
 
 const Contact = () => {
     return (
-        <section id="contact " className=' h-auto relative p-5  lg:p-24 lg:flex  bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50'>
+        <section id="contact " className=' h-auto w-screen relative p-5 pb-24 lg:p-24 lg:flex  bg-gradient-to-b from-slate-50 via-slate-200 to-slate-300'>
             
-                <div className=" flex flex-col m-auto self-center w-fit p-4 rounded-md drop-shadow-xl  place-content-center  bg-slate-50">
+                <div className=" flex flex-col m-auto self-center w-full max-w-xl p-8 rounded-md drop-shadow-xl  place-content-center  bg-slate-50">
                     <h1 className='text-center text-slate-700 mx-auto m-8 max-w-md'>
-                    Contact me for collaborations or bookings <br></br>, 
-                    via email and follow me on Instagram. <br></br>
+                    Contact me for bookings via email<br></br>
+                     and follow me on Instagram. <br></br>
                      </h1>
                     <div>
                     <div className="contactlogos mb-8 flex justify-center gap-12">

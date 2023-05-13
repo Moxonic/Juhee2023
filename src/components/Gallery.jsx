@@ -39,7 +39,7 @@ function Gallery() {
 							className="imgContainer h-full flex justify-content-center align-items-center "
 						>
 							<img
-								className="max-h-screen max-w-screen m-auto md:p-24"
+								className="max-h-screen max-w-screen m-auto rounded md:p-24"
 								src={image.media_url}
 								alt="pictures from the instagram feed of soprano juhee kang"
 							/>
@@ -52,7 +52,7 @@ function Gallery() {
 	};
 
 	return (
-	<div className="imageCarouselContainer flex justify-center h-screen bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50">
+	<div className="imageCarouselContainer px-5 flex justify-center h-fit w-screen bg-gradient-to-b from-slate-50 via-slate-200 to-slate-50">
 
 					<Carousel
 					
